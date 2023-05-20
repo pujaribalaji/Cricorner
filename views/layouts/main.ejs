@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title != 'undefined'  ? title:"Cricket"  %>    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+
+    <div class="container-xxl">
+        <div class="row justify-content-md-center " >
+          <div class="col  text-black col-lg-4 " style="background-color: #eff0f5;" >
+            <div class="box-1 position-fixed">
+                <div class="row px-3">
+                    <h1 class="h11">LIVE DATA</h1>
+                </div>
+
+               
+                <div class="box-2">
+                    <div class="input-group">
+                        
+                        <div class="col">
+                            <div class="row px-3 pt-4">
+                               
+                                <form method="post" action="/search">
+                                    <input type="search" name="searchTerm" aria-label="search" class="form-control" placeholder="Search match"/>
+                                </form>
+
+                               
+
+                            </div>
+                            <div class="row px-4 py-4 " >
+                                <!-- <div id="search-autocomplete" class="form-outline px-3" style="height: 100px;border-radius: 15px; background-color: rgb(58,90,229);" >
+                                
+                                  
+                                    <div class="d-flex bd-highlight">
+                                        <img src="/img/vector.svg" alt="" style="padding-top: 12%;">
+                                        <div class="p-2 flex-fill bd-highlight" style="padding-top: 12%;color: white;font-weight: bold;" >Cricket Matc</div>
+                                        <img src="/img/4.png" alt="" style="padding-top: 12%;  ">
+                                       
+                                    </div>
+                                    
+                                </div> -->
+                                <a href="">
+                                    <!-- <div id="search-autocomplete" class="form-outline px-3" style="height: 80px;border-radius: 15px; background-color: rgb(58,90,229);" >
+                                
+                                  
+                                        <div class="  d-flex bd-highlight">
+                                            <img class="col-1 justify-content-center" src="/img/vector.svg" alt="" >
+                                            <div class="col-4 justify-content-center "  >Cricket Matc</div>
+                                            <img class="col-7" src="/img/4.png" alt=""   >
+                                            
+                                           
+                                        </div>
+                                        
+                                    </div> -->
+                                     
+                                    <div class="row">
+                                        <div class="box-5">
+                                            <!-- <div class="col-1 pt-4 " > <img src="/img/vector.svg" alt="" ></div>
+                                            <div class="col-5 px-4  "  >Cricket Matc</div>
+                                            <div class="col-4 pt-4 px-4 px-4 justify-content-center" > a</div> -->
+                                           
+<!--                                             
+                                            <div class="col-2 pt-4"><img src="/img/vector.svg" alt=""></div>
+                                            <div class="col-6 pt-2 " style="color: white;"><h5>India  </h5></div>
+                                             -->
+
+                                            <div class="col-9">
+                                                           
+                                                <div class="row pt-3">
+                                                   <div class="col-2 pt-2"><img src="/img/vector.svg" alt=""></div>
+                                                   <div class="col-10 pt-2 " style="color: white;"><h5>Cricker Matc.</h5><p></p></div>
+                                                </div> 
+                                             
+                                           </div>  
+
+                                        </div>
+
+                                    </div>
+
+                                   
+                                </a >
+                                
+
+                                <div class="row px-3 pt-4 justify-content-md-center" >
+                                       
+                                    <a href="" class="category__link col px-2 ">
+                                        <div  style="height: 80px;border-radius: 15px; background-color: #ffffff;" >
+                                             <img class="pt-3" src="/img/fb.png" alt="">
+                                
+                                    
+                                        </div>
+                                    </a>
+                                    <a href="" class="col px-2 category__link">
+                                        <div  style="height: 80px;border-radius: 15px; background-color: #ffffff;"  >
+                                            <img class="pt-3" src="/img/bb.png" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="" class="col px-2 category__link">
+                                        <div  style="height: 80px; border-radius: 15px; background-color: #ffffff;" >
+                                            <img class="pt-3" src="/img/vb.png" alt="">
+                                        </div>
+                                    </a>
+                                  
+                     
+                                </div>
+                             
+                                
+
+                              
+                               
+
+                            </div>
+                        </div>
+                        
+                      </div>
+
+
+                      <div class="row pt-3">
+                        <h3>Live Match</h3>
+
+                    </div>
+
+                   <a href="" class="link-secondary  ">
+                    <div class="row pt-2 px-3 h-50">
+                        <div class="box-4">
+                           <div class="row" style="background-color:#f45b43;height: 35px;">
+                                <div class="row pt-1">
+                                  <div class="col-2" style="color:rgb(249, 249, 247);font-weight: bold;"> Live</div>
+                                  <div class="col-10 " style="font-weight: bold; color: white;" >| IND vs AUS2023</div>
+                                </div>
+                            <div class="col-9">
+                                                           
+                                 <div class="row pt-3">
+                                    <div class="col-2"><img src="/img/india.png" alt=""></div>
+                                    <div class="col-10 pt-2 " style="color: white;"><h5>India  </h5></div>
+                                 </div> 
+                                 <div class="row pt-2">
+                                    <div class="col-2"><img src="/img/aus.png" alt=""></div>
+                                    <div class="col-10 pt-2 " style="color: white;"><h5>Australia</h5></div>
+                                 </div> 
+
+                            </div>  
+                            
+                            <div class="col-3">
+                                 
+                                <div class="row pt-4 px-3" style="color: white; font-weight: bold;">3rd TEST</div>
+
+                            </div>
+
+                           </div>             
+                        </div>
+                    </div>
+                   </a>
+                </div>
+
+            </div>
+          </div>
+         
+          <div class="col  text-white col-lg-8" style="background-color: #eff0f5;">
+
+              <header class="d-flex flex-wrap aline-items-center justify-content-md-end justify-content-center py-2 mb-4 border-bottom">
+                       <ul class="nav col-12 col-md-auto mb-2 text-end mb-md-0">
+                          <li><a href="/" class="nav-link px-3 link-secondary ">Live Score</a></li>
+                          <li><a href="/members.ejs" class="nav-link px-3 link-secondary">Series</a></li>
+                          <li><a href="" class="nav-link px-3 link-secondary">Teams</a></li>
+                          <li><a href="" class="nav-link px-3 link-secondary">Stars</a></li>
+                         
+                       </ul>
+                       <ul class="nav col-12 col-md-auto mb-2 text-end mb-md-0">
+                          <li><a href="/signup" class="nav-link px- py-0 link-secondary"><img src="/img/cricket.png" width="45px" height="45px" alt=""></a></li>
+
+                    </ul>
+              </header>
+
+            <main>
+                <%- body -%>
+
+            </main> 
+             
+             
+
+          </div>
+        
+       
+        </div>
+      </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<h1 class="text-dark">Search Content</h1>
+
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                                  
+         <% if(members !='') { %>
+               <% members.forEach(function(member, index) { %>
+                 <a href="/members/<%= member.id %>" class="col text-center category__link">
+                     <div class="category__img1 shadow">
+                        <img src="/img1/<%= member.image %>" alt="<%= member.name %>" loading="lazy">
+                     </div>
+                <!-- <div class="pt-1"><%= member.name %></div> -->
+                
+              </a>
+             <% }); %>
+            <% } else { %>
+              <p>No members found.</p>
+           <% } %>
+        
+
+</div>

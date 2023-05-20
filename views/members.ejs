@@ -1,0 +1,77 @@
+<% if(member !=null) {  %>
+   
+
+      <div class="player-box-1">
+
+        <div class="row">
+            <div class="col-6 col-md-4 px-5  pb-3 pt-4">
+                <img src="/img1/<%= member.image %>" class="rounded" alt="img-fluid Cinque Terre sticky-top" style="top:20px;" alt="<%= member.name %>" loading="lazy">
+
+            </div>
+            <div class="col col-md-4 ">
+                <div class="row">
+                    <h1 class="text-dark pt-5"><%= member.name %></h1>
+                </div>
+                <div class="row">
+                     <h3  style="color: #828293;"><%= member.country %> • <%= member.category %></h3>
+                </div> 
+            </div>
+           </div>
+           <div class="line-box-1">
+          
+
+           </div>
+           <header class="d-flex flex-wrap aline-items-center justify-content-md-start justify-content-center py- mb-4 ">
+            <ul class="nav col-12 col-md-auto mb-2 text-end mb-md-0">
+               <li><a href="" class="nav-link px-3 link-secondary ">Player Info</a></li>
+               <li><a href="/matchs" class="nav-link px-3 link-secondary">Matches</a></li>
+               <li><a href="" class="nav-link px-3 link-secondary">Videos</a></li>
+               <li><a href="" class="nav-link px-3 link-secondary">News</a></li>
+              
+            </ul>
+           
+   </header>
+        </div>
+
+        <div class="container p-4">
+            <div class="row">
+              <div class="col">
+                <h3 class="text-dark">About MS </h3>
+                <table class="table">
+                    
+                    <tbody>
+                      <tr>
+                        
+                        <td>Name</td>
+                        <th scope="row"><%= member.name %></th>
+                      </tr>
+                      <tr>
+                        <td>Birth</td>
+                        <th scope="row"><%= member.birth %></th>
+                      </tr>
+                      <tr>
+                        <td>Nationality</td>
+                        <th scope="row"><%= member.country %></th>
+                      </tr>
+                      <tr>
+                        <td>Height</td>
+                        <th scope="row"><%= member.height %></th>
+                      </tr>
+                      <tr>
+                        <td>Current-Team</td>
+                        <th scope="row"><%= member.team %></th>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="col">
+                <h3 class="text-dark">Player Bio </h3>
+                <p class="text-dark"><%= member.description %></p>
+              </div>
+              
+            </div>
+          </div>
+       
+        
+
+<% } %>    

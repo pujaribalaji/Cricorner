@@ -1,0 +1,436 @@
+<div class="row px-2" >
+    <h3 style="color: black;font-weight: bold;">Featured Match</h3>
+</div>
+
+    <div class="home-box-1">
+            <div class="row pt-1 px-4" > 
+                <div class="d-flex mb-2 align-items-center">
+                    <h5 style="color: black;">Last Match</h5>
+                    <a href="#" class="ms-auto" >
+                        
+                          
+                           <h6> View all</h6>
+                      
+                    </a>
+                   
+                </div>     
+            </div>
+                                                        
+               <div class="row px-3">
+                
+                   <div class="col-4 px-">
+                      <div class="home-box-3">
+                         <div class="row px-0 ">
+                            <div class="col-3 pt-3 px-2"><img src="/img/rcb.png" width="90px" height="90px" alt=""></div>
+                            <div class="col-3 pt-5 "><div class="inner-box-1">  <p>vs</p></div></div>
+                            <div class="col-3 pt-4 px-4"><img src="/img/csk.png" width="80px" height="80px" alt=""></div>
+                         </div>
+
+                         <div class="row px-3 pt-3">
+                           <a class="col-6 px-4 " href="">
+                            <div  >  
+                                <h6 style="color: black; background-color:#32cf8a;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Live</h6>
+                              </div>
+                            </a>
+                            <a class="col-6 px-4" href="">
+                                <div  >  
+                                    <h6 style="color: black; background-color:white;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Score</h6>
+                                 </div>
+                            </a>
+                         </div>
+                         
+                      </div>  
+                  </div>   
+                  <div class="col-4 px- ">
+                      <div class="home-box-3">
+                        <div class="row px-0 ">
+                            <div class="col-3 pt-3 px-2 "><img src="/img/rcb.png" width="80px" height="80px" alt=""></div>
+                            <div class="col-3 pt-5 "><div class="inner-box-1">  <p>vs</p></div></div>
+                            <div class="col-3 pt-4 px-4"><img src="/img/csk.png" width="80px" height="80px" alt=""></div>
+                        </div>
+
+                       <div class="row px-3 pt-3">
+                          <a class="col-6 px-4" href="">
+                            <div >  
+                                <h6 style="color: black; background-color:#32cf8a;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Live</h6>
+                              </div>
+                          </a>
+                            <a class="col-6 px-4" href="">
+                                <div  >  
+                                    <h6 style="color: black; background-color:white;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Score</h6>
+                                 </div>
+                            </a>
+                       </div>
+                    </div>  
+                </div>
+                <div class="col-4 px- ">
+                    <div class="home-box-3">
+                        <div class="row px-0 ">
+                            <div class="col-3 pt-3 px-2 "><img src="/img/rcb.png" width="80px" height="80px" alt=""></div>
+                            <div class="col-3 pt-5 "><div class="inner-box-1">  <p>vs</p></div></div>
+                            <div class="col-3 pt-4  px-4"><img src="/img/csk.png" width="80px" height="80px" alt=""></div>
+                       </div>
+                        
+                       <div class="row px-3 pt-3">
+                          <a class="col-6 px-4" href="">
+                            <div  >  
+                                <h6 style="color: black; background-color:#32cf8a;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Live</h6>
+                              </div>
+                          </a>
+                            <a class="col-6 px-4" href="">
+                                <div  >  
+                                    <h6 style="color: black; background-color:white;height: auto; width: auto; border-radius: 10px;padding-left: 20%;">Score</h6>
+                                 </div>
+                            </a> 
+                        </div>
+
+                    </div>  
+                </div>
+               </div>
+               
+               <!-- section -->
+
+                  
+                       <section class="pb-1 pt-4">
+                            <div class="d-flex mb-2 align-items-center">
+                                <h2 style="color: black;">Other Games</h2>
+                                <a href="/categories" class="ms-auto" >
+                                       <h4> View all</h4>  
+                                </a>
+                               
+                            </div>
+                            
+                            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                                <% if(categories !='') { %>
+                                    <% categories.forEach(function(category,index) { %>
+                                      <a href="/othergames" class="col text-center category__link">
+                                          <div class="category__img shadow">
+                                             <img src="/img/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+                                          </div>
+                                          <div class="pt-1"><%- category.name %></div>
+                                      </a>
+                                    <% }) %>  
+                                <% } %> 
+
+                               
+
+                            </div>
+                            
+
+                       </section>
+
+                     
+
+                    <section class="p1 pt-3">
+                        <div class="d-flex mb-2 align-items-center">
+                            <h2 style="color: black;">Players</h2>
+                            <a href="/players" class="ms-auto" >
+                                   <h4> View all</h4> 
+                            </a>
+                           
+                        </div>
+                        
+                        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+                                  
+                              <% if(food !='') { %>
+                                <% food.latest.forEach(function(members,index) { %>
+                                  <a href="/members/<%= members.id %>" class="col text-center category__link">
+                                      <div class="category__img1 shadow">
+                                         <img src="/img1/<%= members.image %>" alt="<%= members.name %>" loading="lazy">
+                                      </div>
+                                      <div class="pt-1"><%= members.name %></div>
+                                  </a>
+                                 <% }) %> 
+                                 <% } else { %>
+                                    <p>no content found.</p>
+                                 <% } %>   
+
+                        </div>
+                        
+
+                   </section>
+                   <!-- section Batsman -->
+
+                   <!-- <section class="p1 pt-3">
+                    <div class="d-flex mb-2 align-items-center">
+                        <h3 style="color: black;">WKBatsman</h3>
+                        <a href="/categories/Batsman" class="ms-auto" >     
+                               <h5> View all</h5>
+                        </a>   
+                    </div>
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">     
+                          <% if(food !='') { %>
+                            <% food.WKBatsman.forEach(function(members,index) { %>
+                              <a href="/members/<%= members.id %>" class="col text-center category__link">
+                                  <div class="category__img1 shadow">
+                                     <img src="/img1/<%= members.image %>" alt="<%= members.name %>" loading="lazy">
+                                  </div>
+                                  <div class="pt-1"><%= members.name %></div>
+                              </a>
+                             <% }) %> 
+                           <% } else { %> 
+                            <p>No items Found</p>
+                           <% } %> 
+                             
+                    </div>
+               </section> -->
+                <!-- section Bowler -->
+                   <!-- section Batsman -->
+
+                   <!-- <section class="p1 pt-3">
+                    <div class="d-flex mb-2 align-items-center">
+                        <h3 style="color: black;">Batsman</h3>
+                        <a href="/categories/Batsman" class="ms-auto" >     
+                               <h5> View all</h5>
+                        </a>   
+                    </div>
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">     
+                          <% if(food !='') { %>
+                            <% food.Batsman.forEach(function(members,index) { %>
+                              <a href="/members/<%= members.id %>" class="col text-center category__link">
+                                  <div class="category__img1 shadow">
+                                     <img src="/img1/<%= members.image %>" alt="<%= members.name %>" loading="lazy">
+                                  </div>
+                                  <div class="pt-1"><%= members.name %></div>
+                              </a>
+                             <% }) %> 
+                             <% } else { %> 
+                                <p>No items Found</p>
+                               <% } %>   
+                    </div>
+               </section> -->
+                <!-- section Bowler -->
+
+                <!-- <section class="p1 pt-3">
+                    <div class="d-flex mb-2 align-items-center">
+                        <h3 style="color: black;">Bowler</h3>
+                        <a href="/categories/Bowler" class="ms-auto" >     
+                               <h5> View all</h5>
+                        </a>   
+                    </div>
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">     
+                          <% if(food !='') { %>
+                            <% food.Bowler.forEach(function(members,index) { %>
+                              <a href="/members/<%= members.id %>" class="col text-center category__link">
+                                  <div class="category__img1 shadow">
+                                     <img src="/img1/<%= members.image %>" alt="<%= members.name %>" loading="lazy">
+                                  </div>
+                                  <div class="pt-1"><%= members.name %></div>
+                              </a>
+                             <% }) %> 
+                             <% } else { %> 
+                                <p>No items Found</p>
+                            <% } %>    
+                    </div>
+               </section> -->
+               <!-- section AllRounder -->
+
+               <!-- <section class="p1 pt-3">
+                <div class="d-flex mb-2 align-items-center">
+                    <h3 style="color: black;">All-Rounder</h3>
+                    <a href="/categories/AllRounder" class="ms-auto" >     
+                           <h6> View all</h6>
+                    </a>   
+                </div>
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">     
+                      <% if(food !='') { %>
+                        <% food.AllRounder.forEach(function(members,index) { %>
+                          <a href="/members/<%= members.id %>" class="col text-center category__link">
+                              <div class="category__img1 shadow">
+                                 <img src="/img1/<%= members.image %>" alt="<%= members.name %>" loading="lazy">
+                              </div>
+                              <div class="pt-1"><%= members.name %></div>
+                          </a>
+                         <% }) %> 
+                         <% } else { %> 
+                            <p>No items Found</p>
+                        <% } %>    
+                </div>
+           </section>
+                    -->
+
+
+         <div class="row pt-4">
+
+           
+            <div class="d-flex mb-2 align-items-center">
+                <h2 style="color: black;">Next Matches</h2>
+                <a href="/categories" class="ms-auto" >
+                       <h4> View all</h4>
+                </a>
+               
+            </div>
+
+         </div>
+
+         <!-- <a href="" class="row">
+             
+             <div class="row pt-3">
+                <div class="col-1"><img src="/img/india.png" width="25px" height="25px" alt=""></div>
+                <div class="col-1 pt- text-dark " style="color: white;"><h5>India   </h5></div>
+                <div class="col-2 pt- text-dark " style="color: white;"><h5> Vs  India  </h5></div>
+                <div class="col-1"><img src="/img/india.png" width="25px" height="25px" alt=""></div>
+             </div> 
+         </a> -->
+        
+           
+
+           <div class="row">
+            <div class="col">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        <th scope="row-4">
+                            <img src="/img/india.png" width="25px" height="25px" alt="">
+                        </th>
+                        <th scope="row">
+                            <h4>IND</h4>
+                        </th>
+                        <th scope="row">vs</th>
+                        <th scope="row">
+                             <h4>PAK</h4>
+                        </th>
+                        <th scope="row">
+                            <img src="/img/psk.png" width="25px" height="25px" alt="">
+                        </th>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+               <div class="col-8">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        <th scope="row">
+                            <h4> 12-03-2023</h4>
+                        </th>
+                       
+                       
+                        <th scope="row">
+                             <h4>7.30pm</h4>
+                             
+                        </th>
+                        <th scope="row">
+                            <a href="" class="category__link"><h5 style=" background-color:#32cf8a; border-radius: 20px;padding: 1%; text-align: center;">Live</h5></a>
+                            
+                        </th>
+                        
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+
+           </div>
+
+           <!-- row-2 -->
+           <div class="row">
+            <div class="col">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        <th scope="row-4">
+                            <img src="/img/aus.png" width="25px" height="25px" alt="">
+                        </th>
+                        <th scope="row">
+                            <h4>AUS</h4>
+                        </th>
+                        <th scope="row">vs</th>
+                        <th scope="row">
+                             <h4>ENG</h4>
+                        </th>
+                        <th scope="row">
+                            <img src="/img/eng.png" width="25px" height="25px" alt="">
+                        </th>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+               <div class="col-8">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        <th scope="row">
+                            <h4> 12-03-2023</h4>
+                        </th>
+                        
+                      
+                        <th scope="row">
+                             <h4>7.30pm</h4>
+                             
+                        </th>
+                        <th scope="row">
+                            <a href="" class="category__link"><h5 style=" background-color:#32cf8a; border-radius: 20px;padding: 1%; text-align: center;">Live</h5></a>
+                        </th>
+                        
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+
+           </div>
+
+           <!-- row-3 -->
+           <div class="row">
+            <div class="col">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        <th scope="row-4">
+                            <img src="/img/new-zealand.png" width="25px" height="25px" alt="">
+                        </th>
+                        <th scope="row">
+                            <h4>New-Z</h4>
+                        </th>
+                        <th scope="row">vs</th>
+                        <th scope="row">
+                             <h4>Sri L</h4>
+                        </th>
+                        <th scope="row">
+                            <img src="/img/sri-lanka.png" width="25px" height="25px" alt="">
+                        </th>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+               <div class="col-8">
+                <table class="table text-dark">
+                        
+                   <tbody >
+                      <tr>
+                        
+                        <th scope="row">
+                            <h4> 12-03-2023</h4>
+                        </th>
+                        
+                        
+                        <th scope="row">
+                             <h4>7.30pm</h4>
+                             
+                        </th>
+                        <th scope="row">
+                            <a href="" class="category__link"><h5 style=" background-color:#32cf8a; border-radius: 20px;padding: 1%; text-align: center;">Live</h5></a>
+                        </th>
+                        
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+               </div>
+
+           </div>
+           
+
+           
+         
